@@ -1,0 +1,86 @@
+body{
+	 background-color:#000;
+	 margin:0 auto;
+	 }
+	 
+#fundo{
+		position:relative;
+		width:760px;
+		height:570px;
+		background-image:url("../imagens/fundo_cad.png");
+		margin:auto;
+		}
+		
+#vazio{
+		position:relative;
+		width:760px;
+		height:255px;
+		text-align:center;
+		background-color:;
+		}
+		
+#cadastro{
+			position:relative;
+			width:550px;
+			height:280px;
+			margin:auto;
+			}
+
+.centro{
+		margin:20px 0 0 185px;
+		}
+			
+label{	
+		font-size:12px;
+		font-family:verdana;
+		font-weight:bold;
+		color:#fff;
+		}
+		
+.diferent{
+		width:100px;
+		font-size:12px;
+		font-family:verdana;
+		font-weight:bold;
+		float:left;
+		}
+
+.diferent2{
+		width:100px;
+		font-size:12px;
+		font-family:verdana;
+		font-weight:bold;
+		float:right;
+		}
+		
+input{
+	height:12px;
+	font-size:12px;
+	font-family:verdana;
+	font-weight:bold;
+	color:#000;
+	}
+
+select .uf{
+	float:right;
+	}
+	
+option{
+		font-size:12px;
+		font-weight:bold;
+		}
+			
+a:link img{
+		border:none;
+		}
+		
+a:visited img{
+		border:none;
+		}
+		
+		
+
+
+			
+	
+

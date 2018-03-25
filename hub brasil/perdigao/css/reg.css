@@ -1,0 +1,51 @@
+body{
+	 background-color:#000;
+	 margin:0 auto;
+	 }
+	 
+#fundo{
+		position:relative;
+		width:760px;
+		height:570px;
+		background-image:url("../imagens/fundo_reg.png");
+		margin:auto;
+		}
+		
+#vazio{
+		position:relative;
+		width:760px;
+		height:250px;
+		text-align:center;
+		background-color:;
+		}
+		
+#reg{
+			position:relative;
+			width:530px;
+			height:200px;
+			margin:auto;
+			background-color:;
+			overflow:auto;
+			}
+
+p{  
+	text-align:justify;
+	font-size:12px;
+	font-family:verdana;
+	color:#fff;
+	padding: 0 25px;
+	}
+
+#botao{
+		width:90px;
+		height:30px;
+		margin:20px 0 0 350px;
+		}
+
+a:link img{
+			border:none;
+			}
+
+a:visited img{
+			border:none;
+			}

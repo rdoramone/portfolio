@@ -1,0 +1,147 @@
+body{
+		margin-top:0;
+		background-color:#000;
+		}
+
+#fundo{
+		position:relative;
+		width:760px;
+		height:570px;
+		background-image:url("../imagens/fundo_post.png");
+		margin:0 auto;
+		}
+
+#topo{
+			position:relative;
+			width:760px;
+			height:250px;
+			}
+			
+#post1{
+			position:relative;
+			width:590px;
+			height:100px;
+			margin-left:100px;
+			}
+			
+#img1{
+		position:relative;
+		width:126px;
+		height:96px;
+		border:2px solid #fff;
+ 		background-color:#000;
+		float:left;
+		}
+		
+#img2{
+		position:relative;
+		width:126px;
+		height:96px;	
+		border:2px solid #fff;
+ 		background-color:#000;
+		margin-left:15px;
+		float:left;
+		}
+		
+#img3{
+		position:relative;
+		width:126px;
+		height:96px;
+		border:2px solid #fff;
+ 		background-color:#000;
+		margin-left:15px;
+		float:left;
+		}
+		
+#img4{
+		position:relative;
+		width:126px;
+		height:96px;
+		border:2px solid #fff;
+ 		background-color:#000;
+		margin-left:15px;
+		float:left;
+		}
+
+#post2{
+			position:relative;
+			width:590px;
+			height:30px;
+			margin:10px 0 0 100px;
+			}
+	
+#botao1{
+		position:relative;
+		width:130px;
+		height:30px;
+		text-align:center;
+		font-family:verdana;
+		font-weight:bold;
+		font-size:14px;
+		color:#fff;
+		float:left;
+		}
+		
+#botao2{
+		position:relative;
+		width:130px;
+		height:30px;
+		text-align:center;
+		font-family:verdana;
+		font-weight:bold;
+		font-size:14px;
+		color:#fff;
+		margin-left:15px;
+		float:left;
+		}
+		
+#botao3{
+		position:relative;
+		width:130px;
+		height:30px;
+		text-align:center;
+		font-family:verdana;
+		font-weight:bold;
+		font-size:14px;
+		color:#fff;
+		margin-left:15px;
+		float:left;
+		}
+		
+#botao4{
+		position:relative;
+		width:130px;
+		height:30px;
+		text-align:center;
+		font-family:verdana;
+		font-weight:bold;
+		font-size:14px;
+		color:#fff;
+		margin-left:15px;
+		float:left;
+		}
+		
+#procurar{
+			position:relative;
+			width:250px;
+			height:30px;
+			text-align:center;
+			margin:30px 0 0 250px;
+			}
+			
+#enviar{
+			position:relative;
+			width:565px;
+			height:40px;
+			text-align:center;
+			margin:30px 0 0 100px;
+			}
+			
+a:link img{
+		border:none;
+		}
+
+a:visited img{
+		border:none;
+		}		
+		

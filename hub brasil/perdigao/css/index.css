@@ -1,0 +1,62 @@
+body{
+	 background-color:#000;
+	 margin:0 auto;
+	}
+	 
+#fundo{
+		position:relative;
+		width:760px;
+		height:570px;
+		background-image:url("../imagens/fundo_home.png");
+		margin: 0 auto;
+		}
+		
+#botao1{
+			position:relative;
+			width:220px;
+			height:30px;
+			margin:75px 20px 0 0;
+			float:right;
+			}
+			
+#conteudo{
+			position:relative;
+			width:760px;
+			height:300px;
+			float:right;
+			}
+			
+#textbox1{
+		position:relative;
+		width:430px;
+		height:65px;
+		float:left;
+		}
+		
+#botao2{
+			position:relative;
+			width:320px;
+			height:65px;
+			float:right;
+			margin:28px 0 0 10px;
+			}
+			
+#textbox1 input{
+			float:right;
+			margin-top: 28px;
+			}
+	
+#botao2 img{
+			margin:0 0 0 10px;
+			}
+			
+a:link img{
+		border:none;
+		}
+		
+a:visited img{
+		border:none;
+		}
+		
+		
+			
