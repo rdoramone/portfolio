@@ -1,0 +1,457 @@
+/*
+ * Importar estilos de addons e defaults
+ */
+ 
+@import url("_base/defaults.css");
+
+/*
+ * Define o aspecto principal, como cores e fundos do site.
+ */
+ 
+ *{
+	font-family: 'geoslab703_md_btbold' !important;
+}
+
+ 
+ #base{
+	background:transparent;
+	height: 2646px !important;
+ }
+ 
+ #header{
+	background:transparent;
+ }
+ 
+ #header .wrapper{
+	background:transparent;
+	width:809px;
+ }
+ 
+ #content{
+	background:transparent;
+ }
+ 
+ #content .wrapper{
+	background:transparent;
+	width:809px;
+ }
+ 
+ #footer{
+	background:transparent;
+	height:18px;
+ }
+ 
+ #footer .wrapper{
+	background:transparent;
+	width:809px;
+ }
+ 
+ #header .wrapper h1{
+	background: url(../img/header.jpg) top center no-repeat;
+	display: block;
+	width: 809px;
+	text-indent: -9999px;
+	height: 330px;}
+
+.bloco{	
+	padding-top: 27px;
+	width: 809px;
+	position: relative;
+	height: 100%:
+}
+
+	.bloco .tit-main{
+		background: #1b9ff3;
+		line-height: 33px;
+		height: 33px;
+		width: auto;
+		padding: 0 12px;
+		float: left;
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 21px;
+	}
+	
+	.bloco .tit-desc{
+		line-height: 33px;
+		height: 33px;
+		width: auto;
+		padding: 0 12px;
+		float: left;
+		text-transform: uppercase;
+		color: #1b9ff3;
+		font-size: 21px;
+	}
+
+
+	
+.jcarousel-skin-tango {
+	width: 809px;
+	height: 316px;
+	overflow: hidden;
+	margin: 0 auto;
+	display: block;
+	padding-top: 10px;
+	clear: both; }
+ 
+	.jcarousel-skin-tango .jcarousel-container {
+		position: relative;
+		display: block;
+		width: 100%;
+		padding: 0;
+		height: 100%; }
+ 
+	.jcarousel-skin-tango .jcarousel-direction-rtl { direction: rtl; }
+ 
+	.jcarousel-skin-tango .jcarousel-container-horizontal {
+		width: 100%;
+		padding: 0;
+		height: 100%;
+		position: relative;
+		display: block; }
+ 
+	.jcarousel-skin-tango .jcarousel-container-vertical {
+		width: 75px;
+		height: 245px;
+		padding: 40px 20px; }
+ 
+	.jcarousel-skin-tango .jcarousel-clip { overflow: hidden; }
+ 
+	.jcarousel-skin-tango .jcarousel-clip-horizontal {
+		position: relative;
+		width: 657px;
+		height: 316px;
+		overflow: hidden;
+		margin: 0 auto; }
+ 
+		.jcarousel-skin-tango .jcarousel-clip-horizontal ul { height: 316px; }
+ 
+	.jcarousel-skin-tango .jcarousel-clip-vertical {
+		width: 75px;
+		height: 245px; }
+ 
+	.jcarousel-skin-tango .jcarousel-item {
+		width: 217px;
+		height: 314px;
+		border-right: 2px solid #fff;
+		border-bottom: 2px solid #8f9194;
+		background: url(../img/border.jpg) center 255px no-repeat #EFEFEF; }
+		
+		.jcarousel-skin-tango .jcarousel-item a{
+			display: block;
+			border: none;
+			overflow: hidden;
+			width: 100%;
+			height: 100%;
+			background: url(../img/repeat.png) top center repeat;
+			text-decoration: none;
+		}
+ 
+		.jcarousel-skin-tango .jcarousel-item img {width: 177px;height: 177px;padding: 20px; }
+		
+		.jcarousel-skin-tango .jcarousel-item p.tit-prod{
+			color: #2f333d;
+			font-size: 15px;
+			text-transform: uppercase;
+			text-align: center;
+			padding: 0 5px;
+		}
+		
+		.jcarousel-skin-tango .jcarousel-item p.preco-prod{
+			color: #2A99ED;
+			font-size: 28px;
+			text-transform: uppercase;
+			text-align: center;
+			position: absolute;
+			bottom: 20px;
+			margin-left: 24px;
+		}
+		
+			.jcarousel-skin-tango .jcarousel-item p.preco-prod span.cifrao{
+				font-size: 13px;
+				text-align: center;
+				margin-top: 0;
+				display: inline-table;
+				line-height: 27px;
+				margin-right: 2px;
+			}
+			
+			.jcarousel-skin-tango .jcarousel-item p.preco-prod span{
+				font-size: 21px;
+			}
+	
+	.jcarousel-skin-tango .jcarousel-item-horizontal {
+		margin-left: 0;
+		margin-right: 0; }
+ 
+	.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-item-horizontal {
+		margin-left: 10px;
+		margin-right: 0; }
+ 
+	.jcarousel-skin-tango .jcarousel-item-vertical { margin-bottom: 10px; }
+ 
+	.jcarousel-skin-tango .jcarousel-item-placeholder {
+		background: #fff;
+		color: #000; }
+ 
+	/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 16px;
+		height: 26px;
+		cursor: pointer;
+		padding: 161px 15px 130px 46px;
+		background: url(../img/next_01.png) 18px 155px no-repeat; }
+ 
+		.jcarousel-skin-tango .jcarousel-next-horizontal:hover,
+		.jcarousel-skin-tango .jcarousel-next-horizontal:active {
+			cursor: pointer;
+			background: url(../img/next_02.png) 18px 155px no-repeat; }
+  
+ 
+	.jcarousel-skin-tango .jcarousel-prev-horizontal {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 16px;
+		height: 26px;
+		cursor: pointer;
+		padding: 161px 46px 130px 15px;
+		background: url(../img/prev_01.png) 41px 155px no-repeat; }
+ 
+	.jcarousel-skin-tango .jcarousel-prev-horizontal:hover,
+.jcarousel-skin-tango .jcarousel-prev-horizontal:active { background: url(../img/prev_02.png) 41px 155px no-repeat; }
+
+#overlay-modal{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #000; display: none; z-index: 100; opacity: 0.8;}
+.container-modal{position: absolute; top: 0; left: 50%; margin-left: -402px; z-index: 101; width: 803px; height: 510px; display: none;}
+
+.container-modal p.link-decathlon{
+	font-size: 15px;
+	color: #2A99ED;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	bottom: 13px;	
+	display: none;
+	left: 0;
+}
+
+	.container-modal p.link-decathlon a{
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 15px;
+		color: #2A99ED;
+	}
+
+
+/** carousel modal **/
+
+.content-modal {
+	width: 799px;
+	height: 506px;
+	overflow: hidden;
+	margin: 0 auto;
+	display: none;
+	border: solid 2px #2a99ed;
+	background: #ffffff;
+	clear: both; }
+ 
+	.content-modal .jcarousel-container {
+		position: relative;
+		display: block;
+		width: 100%;
+		padding: 0;
+		height: 100%; }
+ 
+	.content-modal .jcarousel-direction-rtl { direction: rtl; }
+ 
+	.content-modal .jcarousel-container-horizontal {
+		width: 100%;
+		padding: 0;
+		height: 100%;
+		position: relative;
+		display: block; }
+ 
+	.content-modal .jcarousel-container-vertical {
+		width: 75px;
+		height: 245px;
+		padding: 40px 20px; }
+ 
+	.content-modal .jcarousel-clip { overflow: hidden; }
+ 
+	.content-modal .jcarousel-clip-horizontal {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		margin: 0 auto; }
+ 
+		.content-modal .jcarousel-clip-horizontal ul { height: 506px; }
+ 
+	.content-modal .jcarousel-clip-vertical {
+		width: 75px;
+		height: 245px; }
+ 
+	.content-modal .jcarousel-item {
+		width: 711px;
+		height: 447px;
+		padding: 37px 44px 22px 44px;
+		float: left; }
+		
+		.content-modal .jcarousel-item a{
+			display: block;
+			border: none;
+			overflow: hidden;
+			width: 100%;
+			height: 100%;
+			background: url(../img/repeat.png) top center repeat;
+			text-decoration: none;
+		}
+ 
+		.content-modal .jcarousel-item img { width: 217px; }
+		
+		.content-modal .jcarousel-item p.tit-prod{
+			color: #2f333d;
+			font-size: 17px;
+			text-transform: uppercase;
+			text-align: center;
+			padding: 0 5px;
+			font-weight: bold;
+		}
+		
+		.content-modal .jcarousel-item p.preco-prod{
+			color: #2A99ED;
+			font-size: 28px;
+			text-transform: uppercase;
+			font-weight: bold;
+			text-align: center;
+			position: absolute;
+			bottom: 20px;
+			margin-left: 24px;
+		}
+		
+			.content-modal .jcarousel-item p.preco-prod span.cifrao{
+				font-size: 13px;
+				text-align: center;
+				margin-top: 0;
+				display: inline-table;
+				line-height: 27px;
+				margin-right: 2px;
+			}
+			
+			.content-modal .jcarousel-item p.preco-prod span{
+				font-size: 21px;
+			}
+	
+	.content-modal .jcarousel-item-horizontal {
+		margin-left: 0;
+		position: relative;
+		margin-right: 0; }
+		
+	.content-modal .jcarousel-item-horizontal p.nome-prod{
+		font-size: 22px;
+		color: #2f333d;
+		display: block;
+	}
+		.content-modal .jcarousel-item-horizontal p.nome-prod span{
+			display: block;
+			font-size: 15px;
+			color: #9cabb4;
+		}
+		
+	.content-modal .jcarousel-item-horizontal img.img-produto{
+		width: 305px;
+		height: 305px;
+		display: block;
+		border: 0;
+		padding-top: 10px;
+		float: left;
+	}
+	
+	.content-modal .jcarousel-item-horizontal p.desc-produto{
+		font-size: 15px;
+		color: #7b7b7b;
+		width: 400px;
+		float: left;
+		padding-top: 33px;
+		font-family: arial !important;
+		line-height: 18px;
+	}
+	
+	.content-modal .jcarousel-item-horizontal span.preco-prod{
+		display: block;
+		margin-top: 25px;
+		color: #2A99ED;
+		float: right;
+		text-align: left;
+		width: 400px;
+	}
+		
+		.content-modal .jcarousel-item-horizontal span.preco-prod small{
+			font-size: 17px;
+			float: left;
+			margin-top: 3px;
+		}
+	
+		.content-modal .jcarousel-item-horizontal span.preco-prod big{
+			font-size: 36px;
+		}
+		
+		.content-modal .jcarousel-item-horizontal .border-bottom{
+			width: 711px;
+			height: 1px;
+			background: #f1f1f1;
+			position: absolute;
+			bottom: 46px;
+		}
+	/**
+ *  Horizontal Buttons
+ */
+.content-modal .jcarousel-next-horizontal {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 506px;
+		width: 44px;
+		cursor: pointer;
+		padding: 0;
+		background: url(../img/next_01.png) center no-repeat;}
+ 
+		.content-modal .jcarousel-next-horizontal:hover,
+		.content-modal .jcarousel-next-horizontal:active {
+			cursor: pointer;
+			height: 506px;
+			width: 44px;
+			background: url(../img/next_02.png) center no-repeat;}
+  
+ 
+	.content-modal .jcarousel-prev-horizontal {
+		position: absolute;
+		top: 0;
+		left: 0;		
+		height: 506px;
+		width: 44px;
+		cursor: pointer;
+		padding: 0;
+		background: url(../img/prev_01.png) center no-repeat; }
+ 
+	.content-modal .jcarousel-prev-horizontal:hover,
+.content-modal .jcarousel-prev-horizontal:active {background: url(../img/prev_02.png) center no-repeat;
+height: 506px;
+width: 44px;}
+
+a#close{
+	background: url(../img/botao-fechar.gif) top right no-repeat;
+	width: 25px;
+	height: 25px;
+	text-indent: -9999px;
+	position: absolute;
+	right: 50px;
+	top: 50px;
+	display: none;
+	z-index: 10;
+}
