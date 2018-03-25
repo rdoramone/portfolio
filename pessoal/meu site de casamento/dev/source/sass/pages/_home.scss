@@ -1,0 +1,281 @@
+#home{
+	h1{
+		color: $white;
+		font-family: $fontGreat;
+		font-size: 36px;
+		margin-top: 50px;
+		text-align: center;
+		width: 100%;
+
+		i{
+			color: $bluishGreen;
+			font-family: inherit;
+			font-size: inherit;
+		}
+	}
+
+	.save-the-date{
+		color: $white;
+		font-family: $fontLato;
+		font-size: 18px;
+		margin: 100px 0 10px;
+		text-align: center;
+	}
+
+	.line{
+		background-color: $bluishGreen;
+		height: 2px;
+		margin: 0 auto;
+		width: 10%;
+	}
+
+	.box-countdown{
+		margin-bottom: 50px;
+		margin-top: 38px;
+		position: relative;
+
+		&:before,
+		&:after{
+			content: '';
+			clear: both;
+			display: table;
+		}
+
+		.intro-text{
+			color: $white;
+			font-family: $fontLato;
+			font-size: 20px;
+			margin: 0 auto;
+			width: 85%;
+		}
+
+		.countdown{
+			color: $white;
+			font-family: $fontLato;
+			font-size: 16px;
+			margin-top: 20px;
+			width: 100%;
+
+			div{
+				float: left;
+				text-align: center;
+				width: 25%;
+
+				p{
+					color: inherit;
+					font-family: inherit;
+					font-size: 16px;
+
+					&:first-child{
+						margin-bottom: 10px;
+					}
+
+					strong{
+						color: inherit;
+						font-family: inherit;
+						font-size: inherit;
+						font-weight: bold;
+					}
+				}
+			}	
+		}
+	}
+
+	.box-buttons{
+		a{
+			border-radius: 10px;
+			color: $white;
+			display: block;
+			font-family: $fontLato;
+			font-size: 14px;
+			line-height: 50px;
+			margin: 0 auto 20px;
+			text-align: center;
+			text-decoration: none;
+			width: 80%;
+
+			&:first-child{
+				background-color: $green;
+			}
+
+			&:last-child{
+				background-color: $bluishGreen;
+			}
+
+			strong{
+				font-size: 16px;
+				font-weight: bold;
+			}
+
+			.icon-gift{
+				font-size: 24px;
+				margin-right: 5px;
+			}
+
+			&:hover{
+				background-color: $white;
+
+				&:first-child{
+					color: $green;
+				}
+
+				&:last-child{
+					color: $bluishGreen;
+				}
+			}
+		}
+	}
+
+	.box-phrase{
+		p{
+			color: $white;
+			font-family: $fontLato;
+			font-size: 20px;
+			line-height: 1.4;
+			text-align: center;
+		}
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+	#home{
+		h1{
+			font-size: 90px;
+		}
+
+		.save-the-date{
+			font-size: 28px;
+		}
+
+		.box-countdown{
+			.intro-text{
+				font-size: 28px;
+				font-weight: bold;
+				width: 80.5%;
+			}
+
+			.countdown{
+				font-size: 20px;
+				margin-top: 30px;
+
+				div{
+					p{
+						font-size: 20px;
+					}
+				}	
+			}
+		}
+
+		.box-buttons{
+			&:before,
+			&:after{
+				content: '';
+				clear: both;
+				display: table;
+			}
+
+			a{
+				display: block;
+				float: left;
+				font-size: 20px;
+				line-height: 80px;
+				margin: 0 auto 0 5%;
+				width: 45%;
+		
+				.icon-gift{
+					font-size: 34px;
+					margin-right: 10px;
+				}
+
+				strong{
+					font-size: 22px;
+					font-weight: bold;
+				}
+			}
+		}
+
+
+		.box-phrase{
+			margin: 40px 0;
+
+			p{
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1025px){
+	#home{
+		h1{
+			font-size: 100px;
+			margin-top: 100px;
+		}
+
+		.save-the-date{
+			font-size: 28px;
+			margin-top: 120px;
+		}
+
+		.box-countdown{
+			margin: 38px auto 50px;
+			width: 50%;
+
+			.intro-text{
+				font-size: 28px;
+				font-weight: bold;
+				width: 80.5%;
+			}
+
+			.countdown{
+				font-size: 20px;
+				margin-top: 30px;
+
+				div{
+					p{
+						font-size: 20px;
+					}
+				}	
+			}
+		}
+
+		.box-buttons{
+			margin: 0 auto;
+			width: 70%;
+
+			&:before,
+			&:after{
+				content: '';
+				clear: both;
+				display: table;
+			}
+
+			a{
+				display: block;
+				float: left;
+				font-size: 20px;
+				line-height: 80px;
+				margin: 0 auto 0 5%;
+				width: 45%;
+		
+				.icon-gift{
+					font-size: 34px;
+					margin-right: 10px;
+				}
+
+				strong{
+					font-size: 22px;
+					font-weight: bold;
+				}
+			}
+		}
+
+		.box-phrase{
+			margin: 40px 0;
+
+			p{
+				font-size: 20px;
+			}
+		}
+	}
+}

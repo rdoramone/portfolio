@@ -1,0 +1,135 @@
+main{
+	#controller-player{
+		background-color: $white;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		left: 0;
+		margin-top: -50px;
+		padding: 10px;
+		position: fixed;
+		top: 50%;
+		width: 38px;
+		z-index: 3;
+
+		ul{
+			li{
+				margin-bottom: 10px;
+				text-align: center;
+				
+				&:last-child{
+					margin-bottom: 0;
+				}
+
+				a{
+					color: $bluishGreen;
+					display: block;
+					font-size: 20px;
+					text-decoration: none;
+
+					&:hover{
+						color: $green;
+					}
+				}
+			}
+		}
+
+		#pause{
+			display: none;
+		}
+	}
+
+	.overlay{
+		background-color: $blackOpt2;
+		height: 100%;
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 5;
+
+		&.active{
+			display: block !important;
+			z-index: 4;
+		}
+	}
+
+	#modal-player{
+		background-color: $white;
+		border-radius: 10px;
+		left: 10%;
+		padding: 10px;
+		position: absolute;
+		top: 42%;
+		width: 80%;
+		z-index: 6;
+
+		p{
+			color: $black;
+			font-family: $fontLato;
+			font-size: 20px;
+			line-height: 1.2;
+			margin-bottom: 15px;
+			text-align: center;
+		}
+
+		.box-button{
+			display: table;
+			margin: 0 auto;
+			width: 60%;
+
+			button{
+				background-color: transparent;
+				border: none;
+				border-radius: 5px;
+				color: $white;
+				cursor: pointer;
+				float: left;
+				font-family: $fontLato;
+				font-size: 16px;
+				font-weight: bold;
+				height: 44px;
+				margin-left: 10%;
+				text-align: center;
+				width: 40%;
+
+				&:first-child{
+					margin-left: 5%;
+				}
+
+				&#btn-no{
+					background-color: #f00;
+				}
+
+				&#btn-yes{
+					background-color: #0f0;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+	main{
+		#modal-player{
+			left: 20%;
+			width: 60%;
+
+			.box-button{
+				width: 50%;
+			}
+		}
+	}	
+}
+
+@media only screen and (min-width: 1025px){
+	main{
+		#modal-player{
+			left: 30%;
+			width: 40%;
+
+			.box-button{
+				width: 50%;
+			}
+		}
+	}
+}

@@ -1,0 +1,58 @@
+#carousel{
+	position: absolute;
+	z-index: 6;
+	
+	a{
+		background-color: rgba(255, 255, 255, 0.3);
+		border-radius: 50%;
+		color: $white;
+		display: block;
+		height: 44px;
+		font-family: $fontLato;
+		font-size: 30px;
+		line-height: 40px;
+		position: absolute;
+		text-align: center;
+		text-decoration: none;
+		width: 44px;
+		z-index: 7;
+
+		i{
+			color: rgba(0, 0, 0, 0.3);
+		}
+
+		&:hover{
+			background-color: $black;
+
+			i{
+				color: $white;
+			}
+		}
+	}
+
+	#close{
+		right: -20px;
+		top: -20px;
+	}
+
+	#prev{
+		left: 10px;
+	}
+	
+	#current-image{
+		img{
+			background-color: $white;
+			border: 3px solid $white;
+			border-radius: 10px;
+			width: 100%;
+		}
+
+		.txt{
+
+		}
+	}
+
+	#next{
+		right: 10px;
+	}
+}

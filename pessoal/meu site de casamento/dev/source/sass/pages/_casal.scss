@@ -1,0 +1,65 @@
+#casal{
+	.box-couples{
+		border-bottom: 1px dotted $gray;
+		
+		h2{
+			color: $bluishGreen;
+			font-family: $fontGreat;
+			font-size: 50px;
+			font-weight: 500;
+			margin: 20px 0;
+			text-align: center;
+		}
+	}
+
+	section{
+		&:before,
+		&:after{
+			content: '';
+			clear: both;
+			display: table;
+		}
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+	#casal{
+		.box-couples{
+			float: left;
+			padding: 0 20px 10px 20px;
+			width: 50%;
+
+			&:before,
+			&:after{
+				content: '';
+				clear: both;
+				display: table;
+			}
+			
+			h2{
+				font-size: 70px;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1025px){
+	#casal{
+		.box-couples{
+			float: left;
+			padding: 0 20px 10px 20px;
+			width: 50%;
+
+			&:before,
+			&:after{
+				content: '';
+				clear: both;
+				display: table;
+			}
+			
+			h2{
+				font-size: 70px;
+			}
+		}
+	}
+}

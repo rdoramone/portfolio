@@ -1,0 +1,36 @@
+<header id="box-btn-menu" btMenu></header>
+<div class="wrapper" ng-click="hideMenu()">
+	<div id="recados" class="content">
+		<h2 class="title-page">Recados</h2>
+		<p class="txt">Deixe aqui um recadinho para os noivos!!!</p>
+		<form name="messageForm" action="" id="form-message" novalidate>
+			<input type="text" name="name" placeholder="Nome" required ng-model="formData.name" ng-class="{'error' : messageForm.name.$invalid && !messageForm.name.$pristine}">
+			<p ng-show="messageForm.name.$invalid && !messageForm.name.$pristine" ng-class="{'txt-erro' : messageForm.name.$invalid && !messageForm.name.$pristine}">Campo obrigatório.</p>
+			<input type="email" name="email" placeholder="E-mail" required ng-model="formData.email" ng-class="{'error' : messageForm.email.$invalid && !messageForm.email.$pristine}">
+			<p ng-show="messageForm.email.$invalid && !messageForm.email.$pristine" ng-class="{'txt-erro' : messageForm.email.$invalid && !messageForm.email.$pristine}">Campo obrigatório.</p>
+			<textarea name="message" cols="30" rows="5" placeholder="Digite uma messagem para o casal" required ng-model="formData.message" ng-class="{'error' : messageForm.message.$invalid && !messageForm.message.$pristine}"></textarea>
+			<p ng-show="messageForm.message.$invalid && !messageForm.message.$pristine" ng-class="{'txt-erro' : messageForm.message.$invalid && !messageForm.message.$pristine}">Campo obrigatório.</p>
+			<button type="button" value="Comentar" class="btn-comment" ng-click="sendPost(messageForm.$valid)" ng-disabled="messageForm.$invalid">Comentar</button>
+		</form>
+		<h2 class="title-page title">Veja os recados deixados para o casal</h2>
+		<section class="box-comment" ng-repeat="recado in messages">
+			<div class="comment">
+				<p>{{recado.message}}</p>
+				<div class="arrow-down"></div>
+			</div>
+			<div class="comment-author">
+				<h3 class="author">{{recado.name}}</h3>
+				<p class="date"> escrito em {{recado.date}}</p>
+			</div>
+		</section>
+		<div class="overlay" ng-show="showModal"></div>
+		<div class="modal" ng-show="showModal">
+			<a href="javascript:void(0)" class="btn-close" ng-click="close()">x</a>
+			<div class="message" ng-show="showModal">
+				<h3>{{formData.name}},</h3>
+				<p class="txt" ng-show="success">{{msgSuccess}}</p>
+				<p class="txt" ng-show="erro">{{msgErro}}</p>
+			</div>
+		</div>
+	</div>
+</div>

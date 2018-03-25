@@ -1,0 +1,287 @@
+#lista-de-presentes{
+	section{
+		&:before,
+		&:after{
+			content:'';
+			clear: both;
+			display: table;
+		}
+	}
+
+	.txt{
+		text-align: center;
+
+		&:nth-of-type(1){
+			margin-top: 20px;
+		}
+
+		strong{
+			font-weight: bold;
+		}
+	}
+
+	.modal{
+		#form-gift{
+			background-color: transparent;
+			margin: 0 auto;
+			padding-left: 0;
+			padding-right: 0;
+			width: 100%;
+
+			.btn-close{
+				@extend %btn-close;
+				font-size: 30px;
+				margin-bottom: 20px;
+			}
+
+			.box-gift{
+				img{
+					margin: 0 5%;
+					width: 90%;
+				}
+
+				.product{
+					color: $gray;
+					font-family: $fontLato;
+					font-size: 16px;
+					font-weight: bold;
+					line-height: 1.4;
+					margin: 15px 0;
+					text-align: center;
+				}
+
+				input{
+					background-color: $white;
+					border: 1px solid $gray;
+					color: $black;
+					float: left;
+					font-family: $fontLato;
+					font-size: 16px;
+					height: 44px;
+					line-height: 44px;
+				}
+
+				label{
+					display: block;
+					margin-left: 0;
+				}
+
+				#guestname{
+					margin-top: 20px;
+				}
+
+				.box-description-product{
+					&:before,
+					&:after{
+						content: '';
+						clear: both;
+						display: table;
+					}
+
+					p{
+						color: $black;
+						font-family: $fontLato;
+						font-size: 14px;
+						margin-bottom: 5px;
+
+						strong{
+							font-weight: bold;
+						}
+					}
+
+					.color-product{
+						strong{
+							float: left;
+							margin-right: 5px;
+						}
+
+						i{
+							border: 1px solid #eee;
+							display: inline-block;
+							height: 16px;
+							margin-right: 5px;
+							width: 25px;
+						}
+					}
+
+					.box-amount{
+						height: 44px;
+						margin: 20px auto 30px;
+						width: 198px;
+
+						&:before,
+						&:after{
+							content: '';
+							clear: both;
+							display: table;
+						}
+
+						button{
+							background-color: $bluishGreen;
+							border: none;
+							color: $white;
+							float: left;
+							font-family: $fontLato;
+							font-size: 30px;
+							height: 44px;
+							width: 44px;
+						}
+
+						.current-amount{
+							float: left;
+							margin: 0 10px;
+							padding: 0;
+							text-align: center;
+							width: 90px;
+						}
+					}
+
+					.amount{
+						margin: 0 auto;
+						text-align: center;
+						width: 100%;
+					}
+				}
+			}
+
+			.identification-guest{
+				margin-top: 50px;
+				
+				.buttons{
+					width: 100%;
+					.btn-cancel{
+						@extend %btn-cancel;
+					}
+				}
+			}
+		}	
+
+		.message{
+			margin-top: 40px;
+
+			h3{
+				color: $black;
+				font-size: 26px;
+				font-family: $fontLato;
+				font-weight: bold;
+				margin-bottom: 30px;
+				text-align: center;
+			}
+			
+			.txt{
+				margin-top: 0;
+				text-align: center;
+			}
+
+			.signature{
+				color: $gray;
+				font-family: $fontGreat;
+				font-size: 32px !important;
+				text-align: center;
+			}
+		}
+	}
+
+	.container-gifts{
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 814px){
+	#lista-de-presentes{
+		.modal{
+			max-width: 500px;
+			
+			#form-gift{
+				.box-gift{
+					.product{
+						font-size: 20px;
+						margin: 20px 0;
+					}
+				}
+
+				.identification-guest{
+					.buttons{
+						float: right;
+						width: 60%;
+
+						.btn-cancel{
+							
+						}
+
+						.btn-submit{
+							width: 47.5%;
+						}
+					}
+				}
+			}
+		}
+
+		.container-gifts{
+			.box-present{
+
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 815px){
+	#lista-de-presentes{
+		.modal{
+			max-width: 500px;
+			
+			#form-gift{
+				.box-gift{
+					.product{
+						font-size: 20px;
+						margin: 20px 0;
+					}
+
+					.box-description-product{
+						p{
+							margin-bottom: 10px;
+						}
+
+						.color-product{
+							i{
+								height: 18px;
+							}
+						}
+
+						.box-amount{
+							float: left;
+						}
+
+						.amount{
+							float: right;
+							line-height: 44px;
+							margin: 20px 0 30px;
+							width: initial;
+						}
+					}
+				}
+
+				.identification-guest{
+					.buttons{
+						float: right;
+						width: 60%;
+
+						.btn-cancel{
+							
+						}
+
+						.btn-submit{
+							width: 47.5%;
+						}
+					}
+				}
+			}
+		}
+
+		.container-gifts{
+			.box-present{
+
+			}
+		}
+	}
+}

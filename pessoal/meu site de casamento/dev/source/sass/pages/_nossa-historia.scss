@@ -1,0 +1,15 @@
+@media only screen and (min-width: 769px){
+	#nossa-historia{
+		.txt{
+			&:nth-of-type(1){
+				margin-top: 30px;
+			}
+		}
+
+		.image{
+			float: left;
+			margin: 30px 20px 0 0;
+			width: 40%;
+		}
+	}
+}

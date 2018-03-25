@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html id="mySite" ng-app="mySite" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	    <title>..::Tauana &amp; Ricardo ::.. | {{contentHead.title}}</title>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <meta name="description" content="{{contentHead.description}}">
+	    <meta name="keywords" content="{{contentHead.keywords}}">
+	    <meta name="author" content="Ricardo Jesus <rdo_ramone@hotmail.com>">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	    <link href='https://fonts.googleapis.com/css?family=Lato:100,400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	    <link type="text/css" rel="stylesheet" href="assets/css/style.min.css" />
+	</head>
+	<body>
+		<div class="slide"></div>
+		<div class="bg-page"></div>
+		<main role="conteudo-principal">
+			<header role="cabecalho" id="header">
+				<nav role="menu" id="menu" menu></nav>
+			</header>
+			<section id="ng-view" class="container" ng-view></section>
+			
+			<!-- Modal -->
+			<div class="overlay" ng-show="showOverlay"></div>
+			<div id="modal-player" ng-show="showPlayer">
+				<p>Deseja ouvir a música do casal?</p>
+				<div class="box-button">
+					<button type="button" id="btn-yes" ng-click="ModalPlay()">Sim</button>
+					<button type="button" id="btn-no" ng-click="ModalPause()">Não</button>
+				</div>
+			</div>
+			
+			<!-- Controller Player -->
+			<div id="controller-player" player>
+				<ul>
+					<li>
+						<a href="javascript:void(0)" title="Anterior" id="prev" class="fa fa-step-backward" ng-click="backward()"></a>
+					</li>
+					<li>
+						<a href="javascript:void(0)" title="Play" id="play" class="fa fa-play" ng-click="play()"></a>
+					</li>
+					<li>
+						<a href="javascript:void(0)" title="Pause" id="pause" class="fa fa-pause" ng-click="pause()"></a>
+					</li>
+					<li>
+						<a href="javascript:void(0)" title="Próxima" id="next" class="fa fa-step-forward" ng-click="forward()"></a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Player -->
+			<audio id="player">
+			  <source id="src-music" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+			<!-- Aqui a diretiva não precisa ser mencionada como no menu pois a tag do html está funcionando como uma diretiva -->
+			<footer role="rodape" id="footer"></footer>
+		</main>
+		
+
+	    <!-- Bibliotecas -->
+		<script type="text/javascript" src="assets/js/libs/libs.js"></script>
+
+		<!-- Google Maps API -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjI5qwU0RJXCcSj594DcMatMflZbgo8Zo"></script>
+		
+		<!-- Utils -->
+		<!-- <script type="text/javascript" src="assets/js/utils/utils.js"></script> -->
+
+		<!-- SCRIPTS -->
+		<script type="text/javascript" src="assets/js/app.js"></script>
+	</body>
+</html>

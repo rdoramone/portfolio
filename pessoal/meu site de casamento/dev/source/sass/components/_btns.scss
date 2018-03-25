@@ -1,0 +1,132 @@
+%btn-cancel{
+	background-color: #f00;
+	border: none;
+	border-radius: 10px;
+	color: $white;
+	display: inline-block;
+	font-family: $fontLato;
+	font-size: 17px;
+	line-height: 44px;
+	margin: 30px 5% 0 0;
+	text-align: center;
+	text-decoration: none;
+	width: 47.5%;
+}
+
+%btn-choose{
+	background-color: $bluishGreen;
+	border: none;
+	box-shadow: 0 7px #357470;
+	color: $white;
+	display: block;
+	font-family: $fontLato;
+	font-size: 20px;
+	font-weight: bold;
+	height: 44px;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+
+	&.btn-disabled{
+		background-color: #999;
+		box-shadow: 0 7px #333;
+		opacity: 0.5;
+		filter: alpha(opacity=50);
+		text-decoration: line-through;
+	}
+}
+
+%btn-confirm{
+	background-color: $bluishGreen;
+	border-radius: 10px;
+	color: $white;
+	display: block;
+	font-family: $fontLato;
+	font-size: 17px;
+	line-height: 44px;
+	margin: 30px auto 0;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+}
+
+%btn-menu{
+	background-color: transparent;
+	border: solid $white;
+	border-width: 4px 0;
+	cursor: pointer;
+	height: 20px;
+	padding: 4px 0;
+	position: absolute;
+	left: 16px;
+	top: 20px;
+    width: 30px;
+
+    &:before{
+    	background-color: $white;
+    	content:'';
+    	display: block;
+    	height: 4px;
+    }
+}
+
+%btn-message{
+	background-color: transparent;
+	border-radius: 10px;
+	border: 2px solid $bluishGreen;
+	color: $bluishGreen;
+	display: block;
+	font-family: $fontLato;
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 44px;
+	margin: 20px auto;
+	text-align: center;
+	text-decoration: none;
+	width: 80%;
+
+	.icon-comment{
+		font-size: 22px;
+		margin-left: 5px;
+	}
+}
+
+%btn-share{
+	background-color: $bluishGreen;
+	border-radius: 10px;
+	color: $white;
+	display: block;
+	font-family: $fontLato;
+	font-size: 17px;
+	line-height: 44px;
+	margin: 30px auto 0;
+	text-align: center;
+	text-decoration: none;
+	width: 70%;
+}
+
+%btn-submit{
+	background-color: $bluishGreen;
+	border: none;
+	border-radius: 10px;
+	color: $white;
+	display: inline-block;
+	font-family: $fontLato;
+	font-size: 17px;
+	line-height: 44px;
+	margin: 30px auto 0;
+	text-align: center;
+	text-decoration: none;
+	width: 47.5%;
+}
+
+%btn-close{
+	background-color: transparent;
+	border: none;
+	color: $gray;
+	float: right;
+	font-family: $fontLato;
+	line-height: 30px;
+	text-decoration: none;
+}

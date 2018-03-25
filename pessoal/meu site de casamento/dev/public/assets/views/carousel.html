@@ -1,0 +1,13 @@
+<a href="javascript:void(0)" title="Fechar" id="close" ng-click="close()">
+	<i aria-hidden="true" class="fa fa-times"></i>
+</a>
+<a href="javascript:void(0)" title="Anterior" id="prev" ng-click="prev()" ng-show="firstImage">
+	<i class="fa fa-arrow-left" aria-hidden="true"></i>
+</a>
+<a href="javascript:void(0)" title="Próxima" id="next" ng-click="next()" ng-show="lastImage">
+	<i class="fa fa-arrow-right" aria-hidden="true"></i>
+</a>
+<div id="current-image">
+	<img src="" alt="">
+	<p class="txt" ng-show="hasText"></p>
+</div>

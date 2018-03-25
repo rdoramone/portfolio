@@ -1,0 +1,31 @@
+.btn-close{
+	@extend %btn-close;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.modal{
+	background-color: $white;
+	border-radius: 10px;
+	padding: 20px;
+	position: absolute;
+	z-index: 6;
+
+	.message{
+		margin-top: 40px;
+
+		h3{
+			color: $black;
+			font-size: 26px;
+			font-family: $fontLato;
+			font-weight: bold;
+			margin-bottom: 30px;
+			text-align: center;
+		}
+		
+		.txt{
+			margin-top: 0;
+			text-align: center;
+		}
+	}
+}

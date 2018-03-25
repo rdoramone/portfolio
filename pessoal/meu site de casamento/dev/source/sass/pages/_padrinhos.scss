@@ -1,0 +1,61 @@
+#padrinhos{
+	.box-godparents{
+		.line{
+			display: none;
+			clear: both;
+		}
+
+		.godparents{
+			border-bottom: 1px dotted $gray;
+
+			&:last-of-type{
+				border-bottom: none;
+			}
+
+			h3{
+				display: block;
+				text-align: center;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 769px){
+	#padrinhos{
+		.box-godparents{
+			&:before,
+			&:after{
+				content: '';
+				clear: both;
+				display: table;
+			}
+
+			.line{
+				display: block;
+
+				&:last-of-type{
+					display: none;
+				}
+			}
+
+			.godparents{
+				border-bottom: none;
+				float: left;
+				margin-right: 3.3%;
+				width: 30%;
+
+				&:nth-of-type(1){
+					margin-top: 0;
+				}
+
+				&:last-of-type{
+					margin-right: 0;
+				}
+
+				h3{
+					font-size: 24px;
+				}
+			}
+		}
+	}	
+}

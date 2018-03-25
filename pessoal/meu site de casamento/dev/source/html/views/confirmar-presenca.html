@@ -1,0 +1,52 @@
+<header id="box-btn-menu" btMenu></header>
+<div class="wrapper" ng-click="hideMenu()">
+	<div id="confirmar-presenca" class="content">
+		<h2 class="title-page">Confirme sua presença</h2>
+		<p class="txt">Preencha o formulário abaixo e confirme a sua presença, pois é muito importante para nós.</p>
+		<form name="presenceForm" action="" id="form-attendance-confirmation">
+			<input type="text" name="name" placeholder="Nome" required ng-model="formData.name">
+			<p ng-show="presenceForm.name.$invalid && !presenceForm.name.$pristine" ng-class="{'txt-erro' : presenceForm.name.$invalid && !presenceForm.name.$pristine}">Campo obrigatório.</p>
+			<input type="email" name="email" placeholder="E-mail" required ng-model="formData.email">
+			<p ng-show="presenceForm.email.$invalid && !presenceForm.email.$pristine" ng-class="{'txt-erro' : presenceForm.email.$invalid && !presenceForm.email.$pristine}">Campo obrigatório.</p>
+			<div class="box-question">
+				<p class="txt">Você irá comparecer no casamento?</p>
+				<input id="yes" type="radio" name="presence" value="1" required ng-model="formData.presence">
+				<label for="yes">Sim</label>
+				<input id="no" type="radio" name="presence" value="0" required ng-model="formData.presence">
+				<label for="no">Não</label>
+				<p ng-show="presenceForm.presence.$invalid && !presenceForm.presence.$pristine" ng-class="{'txt-erro' : presenceForm.presence.$invalid && !presenceForm.presence.$pristine}">Campo obrigatório.</p>
+			</div>
+			<div class="box-question" ng-show="formData.presence == 1">
+				<p class="txt">Você tem acompanhante(s) para o casamento?</p>
+				<input id="yescompanies" type="radio" name="companion" value="1" required ng-model="formData.companion">
+				<label for="yescompanies">Sim</label>
+				<input id="nocompanies" type="radio" name="companion" value="0" required ng-model="formData.companion">
+				<label for="nocompanies">Não</label>
+				<p ng-show="presenceForm.companion.$invalid && !presenceForm.companion.$pristine" ng-class="{'txt-erro' : presenceForm.companion.$invalid && !presenceForm.companion.$pristine}">Campo obrigatório.</p>
+			</div>
+			<div id="companions" class="box-question" ng-show="formData.companion == 1 && formData.presence == 1">
+				<p class="txt">Digite abaixo o nome do seu acompanhante. Caso seja necessário adicione mais pessoas clique no <i class="btn-small add-companions">+</i> e adicione mais pessoas.</p>
+				<div class="box-buttons">
+					<p class="txt" ng-show="countCompanions <= 1">Acompanhante</p>
+					<p class="txt" ng-show="countCompanions > 1">Acompanhantes</p>
+					<button type="button" class="btn add-companions" ng-click="addCompanions()">+</button>
+				</div>
+				<div class="box-companions" ng-repeat="numCompanions in arrCompanions">
+					<input type="text" name="namecompanions{{numCompanions}}" placeholder="Nome do acompanhante" ng-model="formData.companions[numCompanions].name">
+					<button type="button" class="btn remove-companions" ng-click="removeCompanions($index)">-</button>
+				</div>
+			</div>
+			<button type="button" class="btn-submit" title="Confirmar" ng-click="sendPost(presenceForm.$valid)" ng-disabled="presenceForm.$invalid">Confirmar</button>
+		</form>
+		<section social></section>
+		<div class="overlay" ng-show="showModal"></div>
+		<div class="modal" ng-show="showModal">
+			<a href="javascript:void(0)" class="btn-close" ng-click="close()">x</a>
+			<div class="message" ng-show="showModal">
+				<h3>{{formData.name}},</h3>
+				<p class="txt" ng-show="formData.presence == 1">{{msgSuccess}}</p>
+				<p class="txt" ng-show="formData.presence == 0">{{msgErro}}</p>
+			</div>
+		</div>
+	</div>
+</div>

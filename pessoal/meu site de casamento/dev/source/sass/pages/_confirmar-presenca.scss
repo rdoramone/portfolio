@@ -1,0 +1,124 @@
+#confirmar-presenca{
+	.txt{
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	#form-attendance-confirmation{
+		margin: 20px auto;	
+
+		.txt{
+			text-align: left;
+		}
+	}
+
+	.btn-small{
+		border-radius: 50%;
+		color: $white;
+		display: inline-block;
+		font-family: $fontLato;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: bold;
+		height: 20px;
+		line-height: 20px;
+		text-align: center;
+		width: 20px;
+
+		&.add-companions{
+			background-color: #0f0;
+		}
+	}
+
+	#companions{
+		position: relative;
+
+		.box-buttons{
+			height: 44px;
+			position: relative;
+			width: 100%;
+
+			.txt{
+				float: left;
+				line-height: 44px;
+				margin-top: 0;
+				padding-bottom: 0;
+			}
+
+			.add-companions{
+				float: right;
+			}
+		}
+
+		.box-companions{
+			margin-top: 20px;
+
+			input{
+				float: left;
+				margin-bottom: 20px;
+				margin-top: 0;
+				width: 70%;
+			}
+		}
+
+		.btn{
+			border: none;
+			border-radius: 50%;
+			color: $white;
+			float: right;
+			font-family: $fontLato;
+			font-size: 28px;
+			font-style: normal;
+			font-weight: bold;
+			height: 44px;
+			width: 44px;
+
+			&.add-companions{
+				background-color: #0f0;
+			}
+			
+			&.remove-companions{
+				background-color: #f00;
+				margin-left: 10px;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+	#confirmar-presenca{
+		#form-attendance-confirmation{
+			width: 90%;
+		}
+
+		#companions{
+			.box-buttons{
+				.btn{
+					margin-left: 20px;
+				}
+			}
+
+			.box-companions{
+				input{
+					width: 88%;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1025px){
+	#confirmar-presenca{
+		#form-attendance-confirmation{
+			width: 80%;
+		}
+
+		#companions{
+			.box-companions{
+				input{
+					width: 90%;
+				}
+			}
+		}
+	}
+}

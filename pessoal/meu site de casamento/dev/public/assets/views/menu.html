@@ -1,0 +1,27 @@
+<ul>
+<!-- Aplicar a classe "active" no link dos menus que teram dropdown -->
+	<li><a href="#!/" ng-click="hideMenu()">Início</a></li>
+	<li class="dropdown" ng-click="dropdown($event)"><a href="javascript:void(0);">Sobre nós <i></i></a>
+		<ul>
+			<li><a href="/#!/nossa-historia" ng-click="hideMenu()">Nossa história</a></li>
+			<!-- <li><a href="/#!/casal" ng-click="hideMenu()">O casal</a></li> -->
+			<li><a href="/#!/fotos" ng-click="hideMenu()">As fotos</a></li>
+		</ul>
+	</li>
+	<li class="dropdown" ng-click="dropdown($event)"><a href="javascript:void(0);">Eventos <i></i></a>
+		<ul>
+			<!-- <li><a href="/#!/cha-de-cozinha-e-cha-bar" ng-click="hideMenu()">Chá de cozinha / bar</a></li> -->
+			<li><a href="/#!/cerimonia-de-casamento" ng-click="hideMenu()">Cerimônia de casamento</a></li>
+		</ul>
+	</li>
+	<li><a href="/#!/lista-de-presentes" ng-click="hideMenu()">Presentes</a></li>
+	<li><a href="/#!/confirmar-presenca" ng-click="hideMenu()">RSVP</a></li>
+	<li class="dropdown" ng-click="dropdown($event)"><a href="javascript:void(0);">Informações <i></i></a>
+		<ul>
+			<li><a href="/#!/daminhas" ng-click="hideMenu()">Daminhas</a></li>
+			<li><a href="/#!/padrinhos" ng-click="hideMenu()">Padrinhos e Madrinhas</a></li>
+			<!-- <li><a href="/#!/hospedagem" ng-click="hideMenu()">Hospedagem</a></li> -->
+		</ul>
+	</li>
+	<li><a href="/#!/recados" ng-click="hideMenu()">Recados</a></li>
+</ul>

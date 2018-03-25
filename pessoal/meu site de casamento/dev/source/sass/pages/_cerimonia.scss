@@ -1,0 +1,29 @@
+#cerimonia{
+	.txt{
+		text-align: center;
+		
+		&:nth-of-type(1){
+			margin-top: 20px;
+		}
+	}
+	
+	.btn-confirm{
+		@extend %btn-confirm;
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+	#cerimonia{
+		.btn-confirm{
+			width: 40%;
+		}
+	}
+}
+
+@media only screen and (min-width: 1025px){
+	#cerimonia{
+		.btn-confirm{
+			width: 30%;
+		}
+	}
+}

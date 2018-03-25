@@ -1,0 +1,91 @@
+<header id="box-btn-menu" btMenu></header>
+<div class="wrapper" ng-click="hideMenu()">
+	<div id="lista-de-presentes" class="content">
+		<h2 class="title-page">Lista de Presentes</h2>
+		<p class="txt">Escolha um presente e selecione qual você gostaria de nos 
+		presentear. =D</p>
+		<p class="txt">Após escolher o presente, fique a vontade para compra-lo na loja de sua preferência.</p>
+		<div class="container-gifts">
+			<div class="box-presents" data-index="{{gift.id}}" ng-repeat="gift in gifts">
+				<img src="assets/img/gifts/{{gift.image}}" alt="{{gift.product}}">
+				<h2 class="title-present">{{gift.product}}</h2>
+				<div ng-if="gift.amount < 1">
+					<p class="txt-present">Produto Indispónivel</p>	
+				</div>
+				<div ng-if="gift.amount == 1">
+					<p class="txt-present">Resta {{gift.amount}} unidade</p>	
+				</div>
+				<div ng-if="gift.amount > 1">
+					<p class="txt-present">Restam {{gift.amount}} unidades</p>
+				</div>
+				<button type="button" class="btn-choose" ng-click="chooseGift(gift.id)" ng-if="gift.amount > 0">Escolher</button>
+				<button type="button" class="btn-choose btn-disabled" ng-click="chooseGift(gift.id)" ng-if="gift.amount < 1" disabled="disable">Escolher</button>
+			</div>
+		</div>
+		<div class="overlay" ng-show="showModal" ng-click="close()"></div>
+		<div class="modal" ng-show="showModal">
+			<form name="choosenGiftForm" action="" id="form-gift" novalidate>
+				<a href="javascript:void(0)" class="btn-close" ng-click="close()">x</a>
+				<div class="box-gift" ng-show='boxGift'>
+					<img src="assets/img/gifts/{{selectGift.image}}" alt="{{selectGift.product}}">
+					<h2 class="product">{{selectGift.product}}</h2>
+					<div class="box-description-product">
+						<p class="brand" ng-show="selectGift.brand != null">
+							<strong>Descrição: </strong>{{selectGift.description}}
+						</p>
+						<p class="brand" ng-show="selectGift.brand != null">
+							<strong>Marca: </strong>{{selectGift.brand}}
+						</p>
+						<p class="model-product" ng-show="selectGift.model != null">
+							<strong>Modelo: </strong>{{selectGift.model}}
+						</p>
+						<p class="color-product" ng-show="selectGift.color != null">
+							<strong>Cor: </strong><i title="{{selectGift.color}}" ng-show="selectGift.colorhexa != null" style="background-color: {{selectGift.colorhexa}}"></i>{{selectGift.color}}
+						</p>
+						<p class="voltage" ng-show="selectGift.voltage != null"><strong>Voltagem: </strong>{{selectGift.voltage}} V</p>
+						<div class="box-amount">
+							<button class="btn-minus" type="button" title="Remover" ng-click="minus()">-</button>
+							<input class="current-amount" name="amountgiftguest" type="text" required disabled="disable" ng-model="countAmount">
+							<button class="btn-plus" type="button" title="Adicionar" ng-click="plus()">+</button>
+						</div>
+						<p class="amount" ng-if="selectGift.amount < 2"><strong>{{amountCurrentGift}}</strong> {{txtAmountCurrentGift}}</p>
+						<p class="amount" ng-if="selectGift.amount > 1"><strong>{{amountCurrentGift}}</strong> {{txtAmountCurrentGift}}</p>
+						<button type="button" class="btn-submit" ng-click="giftSelect()">Selecionar</button>
+					</div>
+				</div>
+				<div class="identification-guest" ng-show="giftSelected">
+					<label for="guestname">Digite seu nome e e-mail abaixo:</label>
+					<input type="text" id="guestname" name="guestname" placeholder="Nome" required ng-model="guestname" ng-class="{'error' : choosenGiftForm.guestname.$invalid && !choosenGiftForm.guestname.$pristine}">
+					<p ng-show="choosenGiftForm.guestname.$invalid && !choosenGiftForm.guestname.$pristine" ng-class="{'txt-erro' : choosenGiftForm.guestname.$invalid && !choosenGiftForm.guestname.$pristine}">Campo obrigatório.</p>
+					<input type="email" id="guestemail" name="guestemail" placeholder="E-mail" required ng-model="guestemail" ng-class="{'error' : choosenGiftForm.guestemail.$invalid && !choosenGiftForm.guestemail.$pristine}">
+					<p ng-show="choosenGiftForm.guestemail.$invalid && !choosenGiftForm.guestemail.$pristine" ng-class="{'txt-erro' : choosenGiftForm.guestemail.$invalid && !choosenGiftForm.guestemail.$pristine}">Campo obrigatório.</p>
+					<input type="hidden" name="giftguest" ng-model="giftguest">
+					<div class="buttons">
+						<button type="button" class="btn-cancel" ng-click="cancel()">Cancelar</button>
+						<button type="button" class="btn-submit" ng-click="choosenGift(choosenGiftForm.$valid)" ng-disabled="choosenGiftForm.$invalid">Finalizar</button>
+					</div>
+				</div>
+				<!-- <div class="message" ng-show="giftNonExistent">
+					<h3>{{guestname}},</h3>
+					<p class="txt">Este presente já foi dado por outra pessoa, escolha um outro presente para nos presentear.</p>
+				</div> -->
+				<div class="message" ng-show='statusCode == 200'>
+					<h3>{{guestname}},</h3>
+					<p class="txt">
+						Obrigado pelo presente e por participar dessa nova etapa da nossa vida!!!
+					</p>
+					<p class="txt">Você receberá um email com o local para entrega do presente, ou se preferir, você pode nos entregar no dia do nosso casamento.</p>
+					<p class="signature">Ricardo e Tauana</p>
+				</div>
+				<div class="message" ng-show='statusCode != 200 && statusCode != 0'>
+					<h3>{{guestname}},</h3>
+					<p class="txt">
+						Não foi possível escolher o presente desejado. Entre em contato com os noivos!!!
+					</p>
+					<p class="signature">Ricardo e Tauana</p>
+				</div>
+			</form>
+		</div>
+		<section social></section>
+	</div>
+</div>

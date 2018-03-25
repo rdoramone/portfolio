@@ -1,0 +1,465 @@
+*{
+	box-sizing: border-box;
+}
+
+.slide{
+	background: url(../img/slides/1.jpg) no-repeat center center;
+	background-size: cover;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.bg-page{
+	background: url('../img/bg.png') repeat 0 0;
+	height: 100%;	
+	left: 0;	
+	position: fixed;	
+	top: 0;	
+	width: 100%;	
+	z-index: 2;	
+}
+
+main{
+	overflow: hidden;
+	position: relative;
+	z-index: 3;	
+	
+	#box-btn-menu{
+		margin-left: 0;
+		transition: margin-left 0.5s;
+		z-index: 5;
+
+		&.active{
+			margin-left: 240px;
+			transition: margin-left 0.5s;
+		}
+	}
+	
+	.container{
+		width: 100%;
+
+		header{
+			background-color: $bluishGreen;
+			height: 60px;
+			position: relative;
+			width: 100%;
+
+			.btn-menu{
+				@extend %btn-menu;
+			}
+		}
+
+		.wrapper{
+			margin: 20px auto;
+			width: 90%;
+		}
+
+		.content{
+			background-color: $whiteOpt;
+			height: 100%;
+			padding: 30px 25px;
+			width: 100%;
+		}
+
+		.title-page{
+			color: $brown;
+			font-family: $fontLato;
+			font-size: 20px;
+			line-height: 1.2;
+			text-align: center;	
+
+			&.title{
+				margin-bottom: 20px;
+				margin-top: 40px;
+			}		
+		}
+
+		.subtitle{
+			color: $gray;
+			font-family: $fontLato;
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 20px;
+			text-align: center;		
+		}
+
+		.txt{
+			color: $gray;
+			font-family: $fontLato;
+			font-size: 17px;
+			line-height: 1.5;
+			padding-bottom: 20px;
+
+			i{
+				font-style: italic;
+			}
+		}
+
+		.message-couple{
+			color: $brown;
+			font-family: $fontLato;
+			font-size: 17px;
+			text-align: center;				
+		}
+
+		.line{
+			border-bottom: 1px $gray dotted;
+			display: block;
+			/* margin: 40px 0 20px; */
+			margin: 20px 0;
+			width: 100%;
+		}
+
+		.image{
+			border: 3px solid $white;
+			margin: 20px 5%;
+			width: 90%;
+
+			&.circle{
+				border-radius: 50%;
+			}
+
+			&.square{
+				border-radius: 5px;
+			}
+		}
+		
+		/* BUTTONS */
+		button{
+			cursor: pointer;
+		}
+
+		.btn-share{
+			@extend %btn-share;
+		}
+
+		.btn-message{
+			@extend %btn-message;
+		}
+
+		/* FORM */
+		form{
+			background-color: $white;
+			border-radius: 10px;
+			display: table;
+			margin: 40px auto;
+			padding: 0 20px 15px;
+			width: 100%;
+			
+			::-webkit-input-placeholder { 
+				color: $white;
+				font-family: $fontLato;
+				font-size: 16px;
+			}
+
+			::-moz-placeholder { 
+				color: $white;
+				font-family: $fontLato;
+				font-size: 16px;
+			}
+
+			:-ms-input-placeholder { 
+				color: $white;
+				font-family: $fontLato;
+				font-size: 16px;
+			}
+
+			:-moz-placeholder { 
+				color: $white;
+				font-family: $fontLato;
+				font-size: 16px;
+			}
+
+			input[type="text"],
+			input[type="email"]{
+				background-color: $bluishGreen;
+				border: none;
+				border-radius: 5px;
+				color: $white;
+				font-family: $fontLato;
+				font-size: 16px;
+				line-height: 44px;
+				margin-top: 20px;
+				padding: 0 10px;
+				width: 100%;
+
+				&.error{
+					border: 1px solid #f00 !important;
+					color: #f00 !important;
+				}
+			}
+
+			.txt-erro{
+				color: #f00;
+				font-family: $fontLato;
+				font-size: 16px !important;
+				margin-top: 20px;
+			}
+
+
+			p{
+				font-size: 16px !important;
+			}
+
+			label{
+				color: $gray;
+				font-family: $fontLato;
+				font-size: 16px;
+				margin-left: 5px;
+				margin-right: 20px;
+			}
+
+			textarea{
+				background-color: $bluishGreen;
+				border: none;
+				border-radius: 5px;
+				color: $white;
+				font-family: $fontLato;
+				font-size: 16px;
+				margin-top: 20px;
+				padding: 10px;
+				width: 100%;
+			}
+
+			.btn-submit,
+			.btn-comment{
+				@extend %btn-submit;
+				float: right;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+	main{		
+		.container{
+			width: 100%;
+
+			header{
+				display: none;
+			}
+
+			.wrapper{
+				margin: 50px auto;
+				width: 96%;
+			}
+
+			.content{
+				padding: 30px 40px;
+
+				.title-page{
+					font-size: 34px;
+
+					&.title{
+						margin-bottom: 20px;
+						margin-top: 40px;
+					}		
+				}
+
+				.subtitle{
+					font-size: 28px;
+					margin-top: 20px;
+				}
+
+				.txt{
+					font-size: 18px;
+					line-height: 1.5;
+				}
+
+				.message-couple{
+					font-size: 18px;				
+				}
+
+				.image{
+					border: 5px solid $white;
+					margin: 20px 25%;
+					width: 50%;
+
+					&.circle{
+						border-radius: 50%;
+					}
+
+					&.square{
+						border-radius: 5px;
+					}
+				}
+				
+				/* BUTTONS */
+				button{
+					cursor: pointer;
+				}
+
+				.btn-share{
+					width: 30% !important;
+				}
+
+				.btn-message{
+					width: 30% !important;
+				}
+
+				/* FORM */
+				form{
+					
+					::-webkit-input-placeholder{ 
+						font-size: 18px;
+					}
+
+					::-moz-placeholder{ 
+						font-size: 18px;
+					}
+
+					:-ms-input-placeholder{ 
+						font-size: 18px;
+					}
+
+					:-moz-placeholder{ 
+						font-size: 18px;
+					}
+
+					input[type="text"],
+					input[type="email"]{
+						font-size: 18px;
+						line-height: 50px;
+					}
+
+					p{
+						font-size: 18px !important;
+					}
+
+					label{
+						font-size: 18px;
+					}
+
+					textarea{
+						font-size: 18px;
+					}
+
+					.btn-submit,
+					.btn-comment{
+						width: 30%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1025px){
+	main{		
+		.container{
+			width: 100%;
+
+			header{
+				display: none;
+			}
+
+			.wrapper{
+				margin: 50px auto;
+				width: 992px;
+			}
+
+			.content{
+				padding: 30px 40px;
+				
+				.title-page{
+					font-size: 34px;
+
+					&.title{
+						margin-bottom: 20px;
+						margin-top: 40px;
+					}		
+				}
+
+				.subtitle{
+					font-size: 28px;
+					margin-top: 20px;
+				}
+
+				.txt{
+					font-size: 18px;
+					line-height: 1.5;
+				}
+
+				.message-couple{
+					font-size: 18px;				
+				}
+
+				.image{
+					border: 5px solid $white;
+					margin: 20px 25%;
+					width: 50%;
+
+					&.circle{
+						border-radius: 50%;
+					}
+
+					&.square{
+						border-radius: 5px;
+					}
+				}
+				
+				/* BUTTONS */
+				button{
+					cursor: pointer;
+				}
+
+				.btn-share{
+					width: 24% !important;
+				}
+
+				.btn-message{
+					width: 25% !important;
+				}
+
+				/* FORM */
+				form{
+					width: 80%;
+					
+					::-webkit-input-placeholder{ 
+						font-size: 18px;
+					}
+
+					::-moz-placeholder{ 
+						font-size: 18px;
+					}
+
+					:-ms-input-placeholder{ 
+						font-size: 18px;
+					}
+
+					:-moz-placeholder{ 
+						font-size: 18px;
+					}
+
+					input[type="text"],
+					input[type="email"]{
+						font-size: 18px;
+						line-height: 50px;
+					}
+
+					p{
+						font-size: 18px !important;
+					}
+
+					label{
+						font-size: 18px;
+					}
+
+					textarea{
+						font-size: 18px;
+					}
+
+					.btn-submit,
+					.btn-comment{
+						width: 30%;
+					}
+				}
+			}
+		}
+	}
+}
