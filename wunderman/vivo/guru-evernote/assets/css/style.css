@@ -1,0 +1,636 @@
+/* START RESET */
+    html, body, div, span, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    abbr, address, cite, code,
+    del, dfn, em, img, ins, kbd, q, samp,
+    small, strong, sub, sup, var,
+    b, i,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section, summary,
+    time, mark, audio, video {
+        margin:0;
+        padding:0;
+        border:0;
+        outline:0;
+        font-size:100%;
+        vertical-align:baseline;
+        background:transparent;
+    }
+    body {
+        line-height:1;
+    }
+    article,aside,details,figcaption,figure,
+    footer,header,hgroup,menu,nav,section { 
+        display:block;
+    }
+    a {
+        margin:0;
+        padding:0;
+        font-size:100%;
+        vertical-align:baseline;
+        background:transparent;
+    }
+    input, select {
+        vertical-align:middle;
+    }
+
+/* START FONTES */
+    @font-face {
+        font-family: 'OfficinaSerifBoldNormal';
+        src: url('../fonts/officinaserif-bold.eot');
+        src: url('../fonts/officinaserif-bold.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/officinaserif-bold.woff') format('woff'),
+             url('../fonts/officinaserif-bold.ttf') format('truetype'),
+             url('../fonts/officinaserif-bold.svg#itc_officina_serifbold') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        line-height: normal;
+    }
+    @font-face {
+        font-family: 'OfficinaSerifBookNormal';
+        src: url('../fonts/officinaserif-book.eot');
+        src: url('../fonts/officinaserif-book.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/officinaserif-book.woff') format('woff'),
+             url('../fonts/officinaserif-book.ttf') format('truetype'),
+             url('../fonts/officinaserif-book.svg#itc_officina_serif_bookRg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        line-height: normal;
+    }
+
+/* ------------ START ALL PAGES ------------ */
+    body{
+        font-size: 62.5%; 
+    }
+    #container{
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        min-width: 240px;
+        max-width: 1024px;
+    }
+    /* START IMAGES HEADER, MAIN AND FOOTER */
+        .lg-vivo img,
+        .lg-evernote img,
+        .lg-vivo-guru img,
+        .devices img,
+        .all-devices img,
+        .lg-telefonica img,
+        .lg-vivo-conectados img{
+            position: relative;
+            width: 100%;
+        }
+        .lg-vivo,
+        .lg-telefonica{
+            float: left;
+            position: relative;
+        }
+        .lg-evernote,
+        .lg-vivo-conectados{
+            float: right;
+            position: relative;
+        }
+    /* START HEADER */
+        .header{
+            background: linear-gradient(#fff 0%, #f4f3f5 95%, #471461 96%, #731ba0 100%);
+            float: left;
+            height: 100%;
+            position: relative;
+            width: 100%;
+        }
+    /* START MAIN */
+        .main{
+            float: left;
+            height: 100%;
+            width: 100%;
+        }
+    /* START FOOTER */
+        .footer{
+            background: #fdfdfd;
+            float: left;
+            height: 100%;
+            width: 100%;
+        }
+/* ------------ START DEFAULT ------------ */
+    /* START MAIN */
+        .txt{
+            color: #585858;
+            font-family: Tahoma, Verdana, sans-serif;
+        }
+        .erro{
+            color: #f00;
+            display: none;
+            font-family: Tahoma, Verdana, sans-serif;
+            line-height: 1.25em;
+        }
+        .bg-form{
+            position: absolute;
+            z-index: 1;
+        }
+        #cadastro{
+            position: relative;
+            width: 100%;
+            z-index: 2;
+        }
+        .txt-label{
+            color: #6b6b6b;
+            display: block;
+            font-family: 'OfficinaSerifBoldNormal', Verdana, Tahoma, sans-serif;
+        }
+        .fields{
+            color: #6b6b6b;
+            font-family: 'OfficinaSerifBookNormal', Verdana, Tahoma, sans-serif;
+            font-size: 1em;
+            line-height: 1.75em;
+        }
+        .enviar{
+            background: #8dc63f;
+            border: 0;
+            color: #fff;
+            cursor: pointer;
+            font-family: 'OfficinaSerifBoldNormal', Verdana, Tahoma, sans-serif;
+            position: relative;
+            text-align: left;
+            text-transform: uppercase;
+        }
+        .enviar img{
+            height: 50%;
+            position: absolute;
+            right: 7.58%;
+            top: 24%;
+            width: 16%;
+        }
+/* ------------ START PAGE SUCCESS ------------ */
+    .tit-thank{
+        color: #5c0096;
+        font-family: 'OfficinaSerifBoldNormal', Verdana, Tahoma, sans-serif;
+    }
+    .tit-receipt{
+        color: #585858;
+        font-family: 'OfficinaSerifBoldNormal', Verdana, Tahoma, sans-serif;
+    }
+/* ----------------------- MEDIA QUERIES ----------------------- */
+@media screen and (min-width: 240px) and (max-width: 768px){
+    /* ------------ START ALL PAGES ------------ */
+        /* START HEADER */
+            .header{
+                max-height: 168px;
+                min-width: 240px;
+                max-width: 768px;
+            }
+            .lg-vivo{
+                margin: 3.26% 0 6.9% 6.77%;
+                width: 31.25%;
+            }
+            .lg-evernote{
+                margin: 6.25% 6.12% 0 0;
+                width: 37.37%;
+            }
+        /* START MAIN */
+            .main{
+                background: url(../img/bg/bg-full-mobile.jpg) no-repeat top center;
+                padding: 5.77% 0;
+                min-width: 240px;
+                max-width: 768px;
+            }
+            .box-txt{
+                margin: 10.68% 7.55% 0 10.81%;
+                width: 81.64%;
+            }
+        /* START FOOTER */
+            .footer{
+                min-width: 240px;
+                max-width: 768px;
+            }
+            .lg-telefonica{
+                margin: 4.3% 0 3.9% 4.43%;
+                width: 18.75%;
+            }
+            .lg-vivo-conectados{
+                margin: 4.17% 4.43% 5.08% 0;
+                width: 50.39%;
+            }
+            .lg-vivo-conectados-tablet{
+                display: none;
+            }
+    /* ------------ START DEFAULT ------------ */
+        /* START MAIN */
+            .lg-vivo-guru{
+                margin: 0 10.16% 0 8.85%;
+                position: relative;
+                width: 80.99%;
+            }
+            .txt{
+                line-height: 1.18em;
+                margin-bottom: 6.51%;
+            }
+            .all-devices{
+                display: none;
+            }
+            .box-form{
+                float: left;
+                margin: 0 5.77%;
+                width: 88.46%;
+            }
+            .erro{
+                margin-bottom: 4.52%;
+                margin-left: 5.57%;
+            }
+            .bg-form{
+                width: 86.46%;
+            }
+            #cadastro{
+                padding: 10% 0 9% 0;
+            }
+            .txt-label{
+                padding: 0 6.33% 6.02% 6.33%;
+                width: 87.35%;
+            }
+            .fields{
+                border: 0.05em solid #b5b5b5;
+                border-radius: 0.43em;
+                margin-top: 4.31%;
+                padding: 0 1.72%;
+                width: 95.17%;
+            }
+            .enviar{
+                border-radius: 0.37em;
+                line-height: 1.81em;
+                margin-left: 25.15%;
+                padding-left: 5.42%;
+                width: 49.7%;
+            }
+    /* ------------ START PAGE SUCCESS ------------ */
+        .devices{
+            margin: 2.6% 14.58% 7.8125% 13.67%;
+            width: 71.875%;
+        }
+        .tit-thank{
+            margin-bottom: 7.81%;
+        }
+        .tit-receipt{
+            margin-bottom: 16.46%;
+        }
+}
+@media screen and (min-width: 240px) and (max-width: 319px){
+    /* ------------ START DEFAULT ------------ */
+        /* START MAIN */
+            .txt{
+                font-size: 1.5em;
+            }
+            .erro{
+                font-size: 1.3em;
+            }
+            .txt-label{
+                font-size: 1.8em;
+            }
+            .enviar{
+                font-size: 2.2em;
+            }
+    /* ------------ START PAGE SUCCESS ------------ */
+        /* START MAIN */
+            .tit-thank{
+                font-size: 1.6em;
+            }
+            .tit-receipt{
+                font-size: 1.4em;
+            }
+}
+@media screen and (min-width: 320px) and (max-width: 479px){
+    /* ------------ START DEFAULT ------------ */
+        /* START MAIN */
+            .txt{
+                font-size: 1.5em;
+            }
+            .erro{
+                font-size: 1.3em;
+            }
+            .bg-form{
+                max-height: 370px;
+            }
+            .txt-label{
+                font-size: 1.8em;
+            }
+            .enviar{
+                font-size: 2.2em;
+            }
+    /* ------------ START PAGE SUCCESS ------------ */
+        /* START MAIN */
+            .tit-thank{
+                font-size: 1.6em;
+            }
+            .tit-receipt{
+                font-size: 1.4em;
+            }
+}
+@media screen and (min-width: 480px) and (max-width: 567px){
+    /* ------------ START ALL PAGES ------------ */
+        /* START MAIN */
+            .main{
+                padding-bottom: 10%;
+            }
+    /* ------------ START DEFAULT ------------ */
+        /* START MAIN */
+            .txt{
+                font-size: 2em;
+            }
+            .erro{
+                font-size: 1.8em;
+            }
+            .bg-form{
+                max-height: 500px;
+            }
+            .txt-label{
+                font-size: 2.5em;
+            }
+            .enviar{
+                font-size: 2.9em;
+            }
+    /* ------------ START PAGE SUCCESS ------------ */
+        /* START MAIN */
+            .tit-thank{
+                font-size: 2.1em;
+            }
+            .tit-receipt{
+                font-size: 1.9em;
+            }
+}
+@media screen and (min-width: 568px) and (max-width: 599px){
+    /* ------------ START DEFAULT ------------ */
+        /* START MAIN */
+            .txt{
+                font-size: 2.5em;
+            }
+            .erro{
+                font-size: 2.3em;
+            }
+            .bg-form{
+                max-height: 570px;
+            }
+            .txt-label{
+                font-size: 3em;
+            }
+            .enviar{
+                font-size: 3.4em;
+            }    
+    /* ------------ START PAGE SUCCESS ------------ */
+        /* START MAIN */
+            .tit-thank{
+                font-size: 2.6em;
+            }
+            .tit-receipt{
+                font-size: 2.4em;
+            }
+}
+@media screen and (min-width: 600px) and (max-width: 639px){
+    /* ------------ START ALL PAGES ------------ */
+        /* START MAIN */
+            .main{
+                padding-bottom: 10%;
+            } 
+    /* ------------ START DEFAULT ------------ */
+        /* START MAIN */
+            .txt{
+                font-size: 2.8em;
+            }
+            .erro{
+                font-size: 2.6em;
+            }
+            .txt-label{
+                font-size: 3.3em;
+            }
+            .enviar{
+                font-size: 3.7em;
+            }
+    /* ------------ START PAGE SUCCESS ------------ */
+        /* START MAIN */
+            .tit-thank{
+                font-size: 3.1em;
+            }
+            .tit-receipt{
+                font-size: 2.9em;
+            }
+}
+@media screen and (min-width: 640px) and (max-width: 700px){
+    /* ------------ START DEFAULT ------------ */
+        /* START MAIN */
+            .txt{
+                font-size: 2.8em;
+            }
+            .erro{
+                font-size: 2.6em;
+            }
+            .txt-label{
+                font-size: 3.3em;
+            }
+            .enviar{
+                font-size: 3.7em;
+            }    
+    /* ------------ START PAGE SUCCESS ------------ */
+        /* START MAIN */
+            .tit-thank{
+                font-size: 3.6em;
+            }
+            .tit-receipt{
+                font-size: 3.4em;
+            }
+}
+@media screen and (min-width: 701px) and (max-width: 768px){
+    /* ------------ START DEFAULT ------------ */
+        /* START MAIN */
+            .txt{
+                font-size: 3.4em;
+            }
+            .erro{
+                font-size: 2.4em;
+            }
+            .txt-label{
+                font-size: 4.6em;
+            }
+            .enviar{
+                font-size: 5.4em;
+            }
+    /* ------------ START PAGE SUCCESS ------------ */
+        /* START MAIN */
+            .tit-thank{
+                font-size: 4.4em;
+            }
+            .tit-receipt{
+                font-size: 3.6em;
+            }
+}
+@media screen and (min-width: 769px){
+    /* ------------ START ALL PAGES ------------ */
+        /* START HEADER */
+            .header{
+                max-height: 70px;
+                min-width: 769px;
+                max-width: 1024px;
+            }
+            .lg-vivo{
+                margin: 0.98% 0 2.15% 2.15%;
+                width: 9.77%;
+            }
+            .lg-evernote{
+                margin: 1.95% 2.44% 1.95% 0;
+                width: 9.97%;
+            }
+        /* START MAIN */
+            .main{
+                background: url(../img/bg/bg-full-tablet.jpg) no-repeat top center;
+                padding: 2.93% 0 4.88% 0;
+                min-width: 769px;
+                max-width: 1024px;
+            }
+            .box-txt{
+                margin: 2.93% 9.96% 1.17% 11.91%;
+            }
+        /* START FOOTER */
+            .footer{
+                max-height: 62px;
+                min-width: 769px;
+                max-width: 1024px;
+            }
+            .lg-telefonica{
+                margin: 2.54% 0 1.56% 1.56%;
+                width: 6.84%;
+            }
+            .lg-vivo-conectados{
+                margin: 0.59% 2.44% 0.59% 0;
+                width: 18.07%;
+            }
+            .lg-vivo-conectados-mobile{
+                display: none;
+            }
+    /* ------------ START DEFAULT ------------ */
+        /* START MAIN */
+            .lg-vivo-guru{
+                margin: 0 30.57% 0 34.47%;
+                position: relative;
+                width: 34.96%;
+            }
+            .txt-tablet{
+                display: inline;
+                margin-bottom: 0;
+            }
+            .txt{
+                font-size: 1.6em;
+                line-height: 1.25em;
+                margin-bottom: 2.93%;
+            }
+            .all-devices{
+                float: left;
+                margin-left: 11.23%;
+                margin-top: 1.17%;
+                width: 42.29%;
+            }
+            .box-form{
+                float: right;
+                margin-right: 9.96%;
+                width: 32.62%;
+            }
+            .erro{
+                font-size: 1.2em;
+                margin-bottom: 1.47%;
+                margin-left: 3.8%;
+            }
+            .bg-form{
+                max-height: 374px;
+                width: 32.62%;            
+            }
+            #cadastro{
+                padding: 8.98% 0 7.49% 0;
+            }
+            .txt-label{
+                font-size: 1.9em;
+                padding: 0 10.17% 6.98% 10.17%;
+                width: 73.65%;
+            }
+            .fields{
+                border: 0.15em solid #b5b5b5;
+                border-radius: 0.53em;
+                margin-top: 2.90%;
+                padding: 0 3.76%;
+                width: 97.7%; 
+            }
+            .enviar{
+                border-radius: 0.53em;
+                font-size: 2.3em;
+                line-height: 1.74em;
+                margin-left: 27.55%;
+                padding-left: 4.5%;
+                width: 40.72%;
+            }
+    /* ------------ START PAGE SUCCESS ------------ */
+        .devices{
+            margin: 5.86% auto 4.4%;
+            width: 38.38%;
+        }
+        .tit-thank{
+            font-size: 3.6em;
+            margin-bottom: 1.47%;
+            text-align: center;
+        }
+        .tit-receipt{
+            font-size: 2em;
+            line-height: 1.25em;
+            margin: 0 auto 11.52%;
+            text-align: center;
+            width: 60%;
+        }
+}
+@media screen and (min-width: 769px) and (max-width: 900px){
+    /* ------------ START DEFAULT ------------ */
+        /* START MAIN */
+            .txt{
+                font-size: 1.4em;
+            }
+            .erro{
+                font-size: 1.1em;
+            }
+            .txt-label{
+                font-size: 1.7em;
+            }
+            .fields{
+                font-size: 1em; 
+            }
+            .enviar{
+                font-size: 1.7em;
+            }
+    /* ------------ START PAGE SUCCESS ------------ */
+        .tit-thank{
+            font-size: 3.4em;
+        }
+        .tit-receipt{
+            font-size: 1.8em;
+        }
+}
+@media screen and (min-width: 901px) and (max-width: 1024px){
+    /* ------------ START DEFAULT ------------ */
+        /* START MAIN */
+            .txt{
+                font-size: 1.6em;
+            }
+            .erro{
+                font-size: 1.2em;
+            }
+            .txt-label{
+                font-size: 1.9em;
+            }
+            .fields{
+                font-size: 1em; 
+            }
+            .enviar{
+                font-size: 2.3em;
+            }
+    /* ------------ START PAGE SUCCESS ------------ */
+        .tit-thank{
+            font-size: 3.6em;
+        }
+        .tit-receipt{
+            font-size: 2em;
+        }
+}
