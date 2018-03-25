@@ -1,0 +1,73 @@
+.container{
+	background: image-url('bg_site_full.jpg') no-repeat 0 0;
+	border-top: 9px solid $darkgray;
+	font-size: 62.5%;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+	width: 100%;
+
+	.wrapper{
+		margin: 0 auto;
+		position: relative;
+		width: 751px;
+	}
+
+	header{
+		#header{
+			height: 129px;
+			margin: 0 auto;
+			width: 95%;
+
+			h1{
+				background: image-url('logo-grupo-valli.png') no-repeat 0 0;
+				float: left;
+				height: 77px;
+				margin-top: 4em;
+				text-indent: -9999px;
+				width: 27.474%; // 196px;
+			}
+
+			ul{
+				float: right;
+				height: 129px;
+				width: 60.6%;
+
+				li{
+					float: left;
+
+					a{
+						color: $darkgray;
+						display: block;
+						font: 17px / 1 $futura;
+						padding: 96px 11px 16px;
+						text-decoration: none;
+
+						&:hover, &.active{
+							background-color: $darkgray;
+							color: $white;
+						} 
+					}
+				}
+			}
+			
+		}
+	}
+
+	.content{
+	}
+
+	footer{
+		background: image-url('bg-footer.png') repeat-x 0 0;
+		height: 42px;
+		width: 100%;
+
+		h6{
+			color: $gray2;
+			display: block;
+			font: 18px / 42px $futura;
+			margin-top: 22px;
+			text-align: center;
+		}
+	}
+}

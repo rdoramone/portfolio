@@ -1,0 +1,107 @@
+// Compass
+@import
+    'compass',
+    'compass/reset';
+
+// Utils
+@import
+	'utils/fonts',
+	'utils/variable';
+	
+// Base
+@import
+    'base/common';
+	
+// Components
+@import
+	'components/boxes',
+	'components/lightbox';
+
+#servicos{
+	h2{
+		color: $blue;
+		font: 40px / normal $futura;
+		margin: 30px auto -13px;
+		width: 95%;
+	}
+
+	.cedilha{
+		background: image-url('cedilha.png') no-repeat 0 0;
+		height: 8px;
+		left: 139px;
+		position: absolute;
+		top: 45px;
+		width: 8px;
+	}
+
+	.box-text{
+		@extend %boxtext;
+
+		p{
+			font: 14px / 1 $arial;
+			margin: 0 auto 20px;
+			width: 95%;
+		}
+
+		ul{
+			li{
+				background-color: $darkblue;
+				margin-top: 10px;
+				width: 100%;
+
+				.box-business{
+					margin: 0 auto;
+					width: 95%;
+				}
+
+				.btn-accordion{
+					color: $white;
+					display: block;
+					font: 18px / 1 $futura;
+					padding: 13px 0 17px;
+					text-decoration: none;
+
+					.arrow-down{
+						background: image-url('arrow_down.png') no-repeat 0 0;
+						float: right;
+						height: 19px;
+						width: 28px;
+					}
+
+					.arrow-up{
+						background: image-url('arrow_up.png') no-repeat 0 0;
+						float: right;
+						height: 19px;
+						width: 28px;
+					}
+				}
+
+				.box-thumbs{
+					display: none;
+					padding-bottom: 17px;
+
+					a{
+						display: inline-block;
+						height: 55px;
+						margin: 0 0 13px 13px;
+						width: 55px;
+
+						&:hover{
+							background-color: #2d495f;
+							filter: alpha(opacity=30);
+							opacity: 0.3;
+						}
+
+						&:first-child{
+							margin-left: 0;
+						}
+
+						&:nth-of-type(11){
+							margin-left: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}

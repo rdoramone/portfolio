@@ -1,0 +1,20 @@
+.box-carousel{
+	max-height: 1030px;
+	max-width: 1920px;
+	overflow: hidden;
+	width: 100%;
+
+	.carousel{
+		li{
+			float: left;
+
+			img{
+				height: 100%;
+				margin-bottom: -2px;
+				max-height: 1030px;
+				max-width: 1920px;
+				width: 100%;
+			}
+		}
+	}
+}

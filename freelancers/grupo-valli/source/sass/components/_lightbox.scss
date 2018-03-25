@@ -1,0 +1,93 @@
+.overlay{
+	background-color: #000;
+	display: none;
+	filter: alpha(opacity=70);
+	height: 100%;
+	left: 0;
+	opacity: 0.7;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 3;
+}
+
+.lightbox{
+	display: none;
+	height: 692px;
+	left: 50%;
+	margin: -346px 0 0 -400px;
+	overflow: hidden;
+	position: fixed;
+	top: 50%;
+	width: 800px;
+	z-index: 4;
+	
+	#close{
+		background-color: $blue;
+		border: none;
+		color: $white;
+		cursor: pointer;
+		font: 18px / 30px Arial;
+		height: 30px;
+		position: absolute;
+		right: 0;
+		width: 35px;
+	}
+
+	.nav-carousel{
+		background-color: $blue;
+		border: none;
+		color: $white;
+		cursor: pointer;
+		filter: alpha(opacity=70);
+		font: bold 30px / 44px Arial;
+		height: 44px;
+		margin-top: -22px;
+		opacity: 0.7;
+		position: absolute;
+		top: 50%;
+		width: 54px;
+
+		&:hover{
+			opacity: 1;
+			filter: alpha(opacity=100);
+		}
+	}
+
+	#prev{
+		left: 0;
+	}
+
+	#next{
+		right: 0;
+	}
+
+	.carousel{
+		background-color: #000;
+		display: table;
+		height: 600px;
+		position: absolute;
+		top: 30px;
+
+		li{
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+			width: 800px;
+		}
+	}
+
+	.description-carousel{
+		background-color: $blue;
+		left: 0;
+		padding: 22px 35px;
+		position: absolute;
+		top: 630px;
+		width: 730px;
+
+		p{
+			color: $white;
+			font: 18px / normal Arial;
+		}
+	}
+}

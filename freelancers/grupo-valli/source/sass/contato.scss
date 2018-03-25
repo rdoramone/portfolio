@@ -1,0 +1,53 @@
+// Compass
+@import
+    'compass',
+    'compass/reset';
+
+// Utils
+@import
+	'utils/fonts',
+	'utils/variable';
+	
+// Base
+@import
+    'base/common';
+
+// Components
+@import
+	'components/boxes';
+
+#contato{
+	h2{
+		color: $blue;
+		font: 40px / normal $futura;
+		margin: 30px auto -13px;
+		width: 95%;
+	}
+
+	.box-text{
+		@extend %boxtext;
+
+		p{
+			font: 14px / 1 $arial;
+			margin: 0 auto 20px;
+			width: 95%;
+
+			strong{
+				font-weight: bold;
+			}
+
+			a{
+				color: $white;
+				text-decoration: none;
+
+				&:visited{
+					color: $white;
+				}
+			}
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+}

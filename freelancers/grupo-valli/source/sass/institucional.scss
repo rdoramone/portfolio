@@ -1,0 +1,53 @@
+// Compass
+@import
+    'compass',
+    'compass/reset';
+
+// Utils
+@import
+	'utils/fonts',
+	'utils/variable';
+	
+// Base
+@import
+    'base/common';
+
+// Components
+@import
+	'components/boxes';
+
+#institucional{
+	h2{
+		color: $blue;
+		font: 40px / normal $futura;
+		margin: 30px auto -13px;
+		width: 95%;
+	}
+
+	img{
+		background-color: $white;
+		padding: 7px 0;
+		width: 100%;
+	}
+
+	.box-text{
+		@extend %boxtext;
+
+		h3{
+			color: $white;
+			font: bold 19px / 1 $arial;
+			margin: 0 auto 10px;
+			width: 95%;
+		}
+
+		p{
+			font: 14px / 1 $arial;
+			margin: 0 auto 20px;
+			width: 95%;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+}

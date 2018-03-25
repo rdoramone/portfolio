@@ -1,0 +1,12 @@
+%boxtext{
+	padding: 26px 0;
+	width: 100%;
+
+	&.bg-blue{
+		background-color: $blue;
+	}
+
+	p{
+		color: $white;
+	}
+}

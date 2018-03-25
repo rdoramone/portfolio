@@ -1,0 +1,40 @@
+// Compass
+@import
+    'compass',
+    'compass/reset';
+
+// Utils
+@import
+	'utils/fonts',
+	'utils/variable';
+	
+// Base
+@import
+    'base/common';
+	
+// Components
+@import
+	'components/boxes',
+	'components/carousel';
+
+#home{
+	.box-text{
+		@extend %boxtext;
+
+		p{
+			font: 19px / 1 $arial;
+			margin: 0 auto 20px;
+			width: 95%;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.carousel{
+		li{
+			max-height: 500px;
+		}
+	}
+}
