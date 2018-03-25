@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'OfficinaSerifBold';
+    src: url('../fonts/officinaserif-bold.eot');
+    src: url('../fonts/officinaserif-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/officinaserif-bold.woff') format('woff'),
+         url('../fonts/officinaserif-bold.ttf') format('truetype'),
+         url('../fonts/officinaserif-bold.svg#itc_officina_serifbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'OfficinaSerifBoldItalic';
+    src: url('../fonts/officinaserif-bolditalic.eot');
+    src: url('../fonts/officinaserif-bolditalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/officinaserif-bolditalic.woff') format('woff'),
+         url('../fonts/officinaserif-bolditalic.ttf') format('truetype'),
+         url('../fonts/officinaserif-bolditalic.svg#itc_officina_serifbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'OfficinaSerifBook';
+    src: url('../fonts/officinaserif-book.eot');
+    src: url('../fonts/officinaserif-book.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/officinaserif-book.woff') format('woff'),
+         url('../fonts/officinaserif-book.ttf') format('truetype'),
+         url('../fonts/officinaserif-book.svg#itc_officina_serif_bookRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'OfficinaSerifBookItalic';
+    src: url('../fonts/officinaserif-bookitalic.eot');
+    src: url('../fonts/officinaserif-bookitalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/officinaserif-bookitalic.woff') format('woff'),
+         url('../fonts/officinaserif-bookitalic.ttf') format('truetype'),
+         url('../fonts/officinaserif-bookitalic.svg#itc_officina_serif_bookitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'VivoBold';
+    src: url('../fonts/vivo-bold.eot');
+    src: url('../fonts/vivo-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/vivo-bold.woff') format('woff'),
+         url('../fonts/vivo-bold.ttf') format('truetype'),
+         url('../fonts/vivo-bold.svg#vivobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'VivoRegularLight';
+    src: url('../fonts/vivo-light.eot');
+    src: url('../fonts/vivo-light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/vivo-light.woff') format('woff'),
+         url('../fonts/vivo-light.ttf') format('truetype'),
+         url('../fonts/vivo-light.svg#vivoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'VivoRegular';
+    src: url('../fonts/vivo-regular.eot');
+    src: url('../fonts/vivo-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/vivo-regular.woff') format('woff'),
+         url('../fonts/vivo-regular.ttf') format('truetype'),
+         url('../fonts/vivo-regular.svg#vivoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
