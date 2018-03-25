@@ -1,0 +1,278 @@
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, a {display: block}
+*:focus {outline: none}
+html{height:100%;}
+body {line-height:1}
+ol, ul {list-style:none}
+blockquote,q {quotes: none}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none}
+table {border-collapse: collapse;	border-spacing: 0}
+hr, del {display: none}
+abbr{cursor:help}
+a{text-decoration:none}
+
+
+/* @font-face */
+@font-face {
+    font-family: 'SegoePro_Regular';
+    src: url('../font/segoepro-regular.eot');
+    src: url('../font/segoepro-regular.eot?#iefix') format('embedded-opentype'),
+    	 url('../font/segoepro-regular.ttf') format('truetype'),
+         url('../font/segoepro-regular.woff') format('woff'),         
+         url('../font/segoepro-regular.svg#segoe_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SegoePro_SemiLight';
+    src: url('../font/segoepro-semilight.eot');
+    src: url('../font/segoepro-semilight.eot?#iefix') format('embedded-opentype'),
+    	 url('../font/segoepro-semilight.ttf') format('truetype'),
+         url('../font/segoepro-semilight.woff') format('woff'),         
+         url('../font/segoepro-semilight.svg#segoe_prosemilight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SegoePro_SemiBold';
+    src: url('../font/segoepro-semibold.eot');
+    src: url('../font/segoepro-semibold.eot?#iefix') format('embedded-opentype'),
+     	 url('../font/segoepro-semibold.ttf') format('truetype'),
+         url('../font/segoepro-semibold.woff') format('woff'),         
+         url('../font/segoepro-semibold.svg#segoe_prosemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Sizes YouTube Brand Channel */
+$width-small:   850px;
+$width-medium: 1056px;
+$width-large:  1262px;
+
+
+body{
+	font-family: 'SegoePro_Regular';
+	min-width: 850px; 
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;	
+}
+
+.clear{clear: both;}
+
+#wrap{
+	background-color: #eee;
+	margin: 0 auto;
+	max-width: 1262px;
+	padding-bottom: 30px;
+}
+
+
+	.banner{			
+		h2{
+			color: #fff;
+			font-family: 'SegoePro_SemiLight';	
+			font-size: 48px;			
+			left: 0;
+			letter-spacing: -1px;
+			position: absolute;
+			text-align: center;
+			top: 6%;		
+			z-index: 1;			
+			width: 100%;
+			@media screen and (min-width: $width-small){
+				font-size: 48px;
+				top: 6%;
+			}
+			@media screen and (min-width: $width-medium){
+				font-size: 54px;
+				top: 6.5%;
+			}
+			@media screen and (min-width: $width-large){
+				font-size: 60px;
+				top: 7%;
+			}
+		}
+		img{width: 100%;}
+	}
+
+
+	.devices{
+		margin-top: -2px;
+
+		.item{
+			box-sizing: border-box;
+			-ms-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-o-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			float: left;
+			height: 376px;
+			width: 50%;
+
+			.image{
+				float: left;
+				height: 376px;
+				width: 44%;
+
+				img{float: right;}				
+			}
+			.image.lumia-1520{background: url(../img/lumia-1520.png) right center no-repeat;}
+			.image.lumia-1320{background: url(../img/lumia-1320.png) right center no-repeat;}
+			.image.lumia-1020{background: url(../img/lumia-1020.png) right center no-repeat;}
+			.image.lumia-630{background: url(../img/lumia-630.png) right center no-repeat;}
+			.info{
+				float: left;
+				margin-left: 6%;
+
+				h3{
+					color: #333;
+					font-family: 'SegoePro_SemiLight';
+					font-size: 38px;
+					padding: 55px 0 12px;
+
+					small{
+						display: block;
+						font-size: 26px;
+						line-height: 26px;
+					}
+				}
+				h3.two-lines{padding: 40px 0 12px;}
+				ul{
+					li{
+						background: url(../img/bullet.png) left center no-repeat;
+						color: #666;
+						font-size: 14px;
+						padding: 2px 0 2px 10px;
+					}
+				}
+				p.price{
+					margin: 15px 0 5px;
+					height: 40px;
+					span{
+						color: #666;
+						float: left;
+						height: 36px;
+						margin-right: 1px;
+					}
+					span.currency{
+						font-size: 20px;
+						line-height: 45px;
+					}
+					span.value{
+						font-family: 'SegoePro_SemiBold';
+						font-size: 36px;
+						line-height: 36px;						
+					}
+					span.float{
+						font-family: 'SegoePro_SemiBold';
+						font-size: 20px;
+						line-height: 26px;
+					}
+				}
+				a{
+					color: #666;
+					display: inline-block;
+					font-size: 20px;
+					height: 24px;
+					margin-top: 10px;
+					position: relative;
+					padding-right: 26px;					
+					
+					span{
+						height: 20px;				
+						position: absolute;
+						right: 0;
+						top: 1px;
+						width: 20px;
+						transition: all 0.15s ease-in;
+						-moz-transition: all 0.15s ease-in;
+						-ms-transition: all 0.15s ease-in;
+						-o-transition: all 0.15s ease-in;
+						-webkit-transition: all 0.15s ease-in;
+					}
+					&:hover > span{right: -4px;}
+					span span{
+						background-image: url(../img/arrow.png);
+						background-repeat: no-repeat;
+						left: 0;
+						position: absolute;
+						top: 0;
+					}
+					span.circle{
+						background-position: left bottom;
+						z-index: 1;
+					}
+					span.arrow{
+						background-position: right bottom;
+						z-index: 0;						
+					}								
+				}				
+			}
+		}
+		.grey{background-color: #eee;}
+		.white{background-color: #fff;}
+	}
+
+		
+	a.line-products{
+		background-color: #0ab9eb;
+		color: #fff;
+		display: block;
+		font-family: 'SegoePro_Semibold';
+		font-size: 15px;
+		height: 40px;
+		line-height: 40px;
+		margin: 30px auto 0;
+		position: relative;
+		text-indent: 22px;
+		width: 396px;
+		span{
+			height: 20px;
+			position: absolute;
+			right: 22px;
+			top: 10px;
+			width: 20px;
+			transition: all 0.15s ease-in;
+			-moz-transition: all 0.15s ease-in;
+			-ms-transition: all 0.15s ease-in;
+			-o-transition: all 0.15s ease-in;
+			-webkit-transition: all 0.15s ease-in;
+		}
+		&:hover > span{right: 18px;}
+		span span{
+			background-image: url(../img/arrow.png);
+			background-repeat: no-repeat;
+			left: 0;
+			position: absolute;
+			top: 0;
+		}
+		span.circle{
+			background-position: left top;
+			z-index: 1;
+		}
+		span.arrow{
+			background-position: right top;
+			z-index: 0;
+		}
+	} 
